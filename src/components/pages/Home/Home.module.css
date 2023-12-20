@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--whitespace-xl);
+  text-align: center;
+}
+
+.main h1 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  color: rgb(var(--bovag-blue));
+}

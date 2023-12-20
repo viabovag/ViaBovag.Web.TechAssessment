@@ -1,0 +1,36 @@
+# dependencies
+node_modules
+
+# testing
+/coverage/
+
+# next.js
+.next/
+
+# MacOS Image info files
+.DS_Store
+
+# debug
+npm-debug.log*
+
+# local env files
+.env
+.env.*
+
+# auth tokens
+auth.json
+
+# rider
+.idea/
+
+# visual studio
+.vs/
+*.suo
+*.user
+Release/**/bin/
+Release/**/obj/
+/Release/packages
+/**/deployment-package
+#!/.vscode/launch.json
+/.vscode/
+**/.vscode

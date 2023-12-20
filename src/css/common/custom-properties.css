@@ -1,0 +1,176 @@
+:root {
+  --base-size: 0.5rem;
+
+  --opacity-none: 1;
+  --opacity-1: 0.87;
+  --opacity-2: 0.54;
+  --opacity-3: 0.24;
+  --opacity-4: 0.12;
+  --opacity-5: 0.06;
+  --opacity-full: 0;
+
+  /* colours */
+  --bovag-yellow: 255 213 0;
+  --bovag-red: 226 0 26;
+  --bovag-green: 4 156 75;
+  --bovag-blue: 47 128 237;
+
+  --grey-1: 243 240 234;
+  --grey-2: 242 242 242;
+  --grey-3: 229 226 219;
+  --grey-4: 213 210 206;
+  --grey-5: 184 190 192;
+  --grey-6: 128 128 128;
+
+  --rgb-transparent: 0 0 0 / 0;
+
+  --header-grey: 22 22 22;
+
+  --brown: 123 99 63;
+  --danger: 193 0 31;
+  --love: 193 0 31;
+  --yellow: 255 218 68;
+  --green: 77 194 72;
+  --icon: 158 71 52;
+  --maroon: 118 36 0;
+  --orange: 240 126 0;
+  --slate: 174 146 140;
+  --fanta: 254 177 0;
+
+  --energy-label-a: 0 176 133;
+  --energy-label-b: 84 185 72;
+  --energy-label-c: 169 190 117;
+  --energy-label-d: 224 212 2;
+  --energy-label-e: 238 177 17;
+  --energy-label-f: 245 128 37;
+  --energy-label-g: 220 0 7;
+
+  --black: 0 0 0;
+
+  --white: 255 255 255;
+
+  --color-cta-default: 4 156 75;
+  --color-cta-hover: 52 174 109;
+  --color-cta-active: 3 118 57;
+  --color-cta-disabled: 120 182 145;
+
+  --color-nav-default: var(--bovag-yellow);
+  --color-nav-hover: 255 224 42;
+  --color-nav-active: 237 199 7;
+  --color-nav-disabled: 255 229 97;
+
+  --color-link-primary: var(--bovag-blue);
+  --color-link-primary-hover: 85 149 236;
+  --color-link-primary-active: 16 98 208;
+  --color-link-primary-disabled: 149 184 231;
+
+  --color-link-secondary: 100 153 176;
+  --color-link-secondary-hover: 100 175 209;
+  --color-link-secondary-active: 65 129 158;
+  --color-link-secondary-disabled: 146 173 185;
+
+  /* distances */
+  --site-container-max-width: 81.5rem;
+
+  --whitespace-xxs: calc(var(--base-size) / 2);
+  --whitespace-xs: var(--base-size);
+  --whitespace-s: calc(var(--whitespace-xs) * 2);
+  --whitespace-m: calc(var(--whitespace-xs) * 3);
+  --whitespace-l: calc(var(--whitespace-xs) * 4);
+  --whitespace-xl: calc(var(--whitespace-xs) * 6);
+  --whitespace-xxl: calc(var(--whitespace-xs) * 10);
+
+  --border-radius-xs: calc(var(--base-size) / 2);
+  --border-radius-s: var(--base-size);
+  --border-radius-m: calc(var(--base-size) * 2);
+  --border-radius-xl: calc(var(--base-size) * 4);
+
+  --contact-bar-height: 6.125rem;
+
+  /* fonts */
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  --font-family-heading: 'Exo', arial, helvetica, sans-serif;
+  --font-family-body: 'Open Sans', arial, helvetica, sans-serif;
+
+  --font-size-xxs: 0.625rem;
+  --font-size-xs: 0.75rem;
+  --font-size-s: 0.875rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.125rem;
+  --font-size-xl: 1.375rem;
+  --font-size-xxl: 1.5rem;
+  --font-size-xxxl: 1.875rem;
+  --font-size-xxxxl: 2.25rem;
+
+  --font-price-contact-bar: var(--font-weight-extra-bold) var(--font-size-xxl) var(--font-family-heading);
+
+  --line-height-content: 1.5;
+
+  /* animations */
+  --animation-fade-in: fadeIn 0.3s ease-out;
+  --animation-fade-out: fadeOut 0.3s ease-out;
+
+  /* transitions */
+  --transition-duration-short: 200ms;
+  --transition-duration-mid: 300ms;
+  --transition-duration-long: 400ms;
+
+  --g-grid-columns: 4;
+  --g-grid-template-columns: repeat(var(--g-grid-columns), minmax(0, 1fr));
+  --g-grid-span-100: span 4;
+  --g-grid-span-75: span 3;
+  --g-grid-span-66: span 3;
+  --g-grid-span-50: span 2;
+  --g-grid-span-33: span 2;
+  --g-grid-span-25: span 1;
+  --g-grid-span-1: span 1;
+  --g-grid-gap: calc(var(--base-size) * 2);
+
+  /* elements */
+  --input-height: 2.5em;
+  --site-header-height: 2.813rem;
+
+  /* stacking */
+  --z-index-max: 100;
+  --z-index-modal: 50;
+  --z-index-overlay: 40;
+  --z-index-cta: 30;
+  --z-index-tooltip: 10;
+  --z-index-tiny: 1;
+  --z-index-hidden: -1;
+
+  /* shadows */
+  --hero-shadow: 0px 4px 5px rgb(var(--black) / var(--opacity-2));
+  --card-shadow: 0 2px 15px 0 rgb(0 0 0 / 12%);
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --g-grid-columns: 12;
+    --g-grid-gap: calc(var(--base-size) * 3);
+    --g-grid-span-100: span 12;
+    --g-grid-span-75: span 9;
+    --g-grid-span-66: span 8;
+    --g-grid-span-50: span 6;
+    --g-grid-span-33: span 4;
+    --g-grid-span-25: span 3;
+
+    --site-header-height: 4rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  :root {
+    --g-grid-gap: calc(var(--base-size) * 4);
+    --site-header-height: 4rem;
+  }
+}

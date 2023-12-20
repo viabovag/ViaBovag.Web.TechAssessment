@@ -1,0 +1,100 @@
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url('/fonts/open-sans/open-sans-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url('/fonts/open-sans/open-sans-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('/fonts/exo/exo-variable.woff2') format('woff2 supports variations'),
+    url('/fonts/exo/exo-variable.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: var(--font-size-m);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-regular);
+  color: rgb(var(--black) / var(--opacity-1));
+  line-height: 1.6;
+}
+
+body {
+  height: 100vh;
+}
+
+.has-active-menu body {
+  -webkit-overflow-scrolling: none;
+  touch-action: none;
+  overscroll-behavior: none;
+  max-height: 100vh;
+}
+
+#__next {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.icon-definitions {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 1em;
+  line-height: 1;
+  margin: 0 0 var(--whitespace-xs) 0;
+}
+
+p {
+  margin: 0;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+  z-index: var(--z-index-hidden);
+}
+
+button,
+input,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+picture {
+  display: contents;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0 0 0 var(--whitespace-s);
+}
